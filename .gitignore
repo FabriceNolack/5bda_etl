@@ -1,0 +1,5 @@
+.env
+env_etl
+log
+__pycache__
+data
