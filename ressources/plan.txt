@@ -1,0 +1,9 @@
+Mon ETL fait maison:
+
+1. Dev E, T, L 
+
+2. Install MySQL
+
+3. Install Luigi
+
+5. Install Pig

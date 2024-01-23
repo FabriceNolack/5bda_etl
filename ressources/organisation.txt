@@ -1,0 +1,71 @@
+ETL + Dashboard (zeppelin)
+Par convesion...
+Extraire les données 
+	- Sources
+	- Capturer
+	- Transiter dans le système
+
+Transformation
+	- Conversion
+	- Formattage
+	- Calcul arithmétique/avancé
+	
+Sauvegarde
+	- fichier (csv, excel)
+	- FTP
+	- RDB
+	- Datalake
+	- Cloud
+	
+Etapes:
+	1. Probélmatique
+	2. Trouver les données pour résoudre la problématique
+	3. Developper l'ETL
+	4. Scheduling (Airflow)
+	5. Deployer 
+	6. Maintenance
+	
+1. Problématique:
+	Connaitre LE PRIX DES JOUEURS de foot du CHAMPIONNAT BELGE.
+	
+	Le championnat Belge => Nom: Pro League
+	Ou trouver des joueurs => sofifa.com (17/01/2024)
+
+2. Trouver des données
+	Trouver un site libre qui fournis des données sur des joueurs
+		sofifa.com
+		fifa.org
+		
+	Comment capturer
+		Scraping (Python, BeautifullSoup)
+		- outil pour Capturer les données depuis un site web python
+	
+	Transiter
+		python, request (HTTP: POST, GET, PUT, PATCH, ...)
+		
+3. Transformation
+	- Wage 
+		- Eliminer le K
+		- Convertir en int
+		- Faire *1000
+	- Value
+		- Eliminer le M ou K
+		- convertir en entier
+		- * 1000000 ou * 1000
+		
+4. Sauvegarde
+	- SGBD (postgresSQL)
+	- Schema relationnel
+		- Full Name
+		- Name
+		- Age
+		- Origin
+		- Position
+		- Value
+		- Wage
+		- Team
+		- Per. Contract
+		
+
+-------------- EXTRA
+1. Ajouter Airflow/Luigi pour orchestration de notre ETL.
